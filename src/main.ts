@@ -1,5 +1,8 @@
 import { NestFactory } from "@nestjs/core";
+<<<<<<< HEAD
 import { ValidationPipe } from "@nestjs/common";
+=======
+>>>>>>> 873e0bf01aa00f509301cf863db73ee5d30eae4d
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { NestExpressApplication } from "@nestjs/platform-express";
 import { AppModule } from "@/src/app.module";
@@ -14,11 +17,14 @@ dotenv.config();
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
+<<<<<<< HEAD
   // সব DTO-র validation চালু করে; ভুল ইনপুটে 400 Bad Request দেয়
   app.useGlobalPipes(
     new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }),
   );
 
+=======
+>>>>>>> 873e0bf01aa00f509301cf863db73ee5d30eae4d
   app.useStaticAssets(join(process.cwd(), "uploads"), {
     prefix: "/uploads/",
   });
