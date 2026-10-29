@@ -4,7 +4,7 @@
 
 | SL | Name | Student ID | Section |
 |----|------|------------|---------|
-| ?  | Your Name | Your ID | Your Section |
+| 34 | Avishek Saha | 23-54508-3 |E |
 
 ## Tech Stack
 NestJS, TypeORM, PostgreSQL
